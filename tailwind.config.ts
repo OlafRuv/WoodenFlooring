@@ -1,4 +1,5 @@
 import type {Config} from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 export default {
   darkMode: ['class'],
@@ -11,7 +12,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        headline: ['Playfair Display', 'serif'],
         code: ['monospace'],
       },
       colors: {
@@ -55,21 +56,11 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
-        },
       },
       borderRadius: {
         lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        md: 'calc(var(--radius) - 4px)',
+        sm: 'calc(var(--radius) - 8px)',
       },
       keyframes: {
         'accordion-down': {
@@ -93,7 +84,24 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      textShadow: {
+        DEFAULT: '0 2px 4px rgba(0, 0, 0, 0.5)',
+        md: '0 4px 8px rgba(0, 0, 0, 0.5)',
+        lg: '0 8px 16px rgba(0, 0, 0, 0.5)',
+      },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 } satisfies Config;
