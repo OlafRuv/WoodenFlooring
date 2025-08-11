@@ -23,7 +23,7 @@ export default function FloatingCTA() {
   const companyData = loadCompanyData();
   
   // Crear el mensaje de WhatsApp
-  const whatsappMessage = encodeURIComponent("Hola, quisiera solicitar una asesoría gratuita.");
+  const whatsappMessage = encodeURIComponent("Hola Bruno, soy [Tu nombre]. Estoy interesado en los servicios de pisos de madera de Casa Venacev. Me gustaría agendar una asesoría técnica gratuita para evaluar mi proyecto. ¿Podrías ayudarme?");
   
   // Formatear el número para WhatsApp (sin +, espacios ni guiones)
   const whatsappNumber = companyData.contact.whatsapp.replace(/[\s\-+]/g, '');
