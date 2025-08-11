@@ -1,5 +1,8 @@
+"use client";
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
 
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2" prefetch={false}>
@@ -18,11 +21,17 @@ const Logo = () => (
       <path d="M2 17l10 5 10-5" />
       <path d="M2 12l10 5 10-5" />
     </svg>
-    <span className="font-semibold text-lg font-headline">Casa Venacev</span>
+    <span className="font-semibold text-lg font-headline text-foreground">Casa Venacev</span>
   </Link>
 );
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState('');
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear().toString());
+  }, []);
+
   const navLinks = [
     { name: "Conócenos", href: "#conocenos" },
     { name: "Servicios", href: "#servicios" },
@@ -31,14 +40,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-foreground text-background dark">
+    <footer className="w-full bg-background text-foreground">
       <div className="container mx-auto py-12 px-4 md:px-6 grid gap-8 md:grid-cols-3">
         <div className="space-y-4">
           <Logo />
           <p className="text-muted-foreground text-sm">Profesionales en Madera. Transformando espacios desde 1994.</p>
         </div>
         <div className="space-y-2">
-          <h4 className="font-semibold">Navegación</h4>
+          <h4 className="font-semibold text-foreground">Navegación</h4>
           <ul className="space-y-1">
             {navLinks.map((link) => (
               <li key={link.name}>
@@ -50,7 +59,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-2">
-          <h4 className="font-semibold">Contacto</h4>
+          <h4 className="font-semibold text-foreground">Contacto</h4>
           <div className="text-sm text-muted-foreground">
             <p>Bruno Ventura Acevedo</p>
             <p>Salvador Ventura Rangel</p>
@@ -65,7 +74,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="container mx-auto py-4 px-4 md:px-6 flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Casa Venacev. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} Casa Venacev. Todos los derechos reservados.</p>
           <Link href="/aviso-de-privacidad" className="hover:text-primary mt-2 md:mt-0" prefetch={false}>
             Aviso de Privacidad
           </Link>

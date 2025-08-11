@@ -59,10 +59,49 @@
   * {
     @apply border-border;
   }
+  
   html {
     @apply scroll-smooth;
+    overflow-x: hidden; /* Prevenir scroll horizontal */
   }
+  
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden; /* Prevenir scroll horizontal */
+    max-width: 100vw; /* Limitar ancho máximo */
+  }
+  
+  /* Prevenir overflow en todos los elementos */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Asegurar que las imágenes no excedan el contenedor */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Prevenir overflow en contenedores principales */
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Prevenir overflow en componentes modales */
+  [data-radix-dialog-overlay],
+  [data-radix-sheet-overlay] {
+    overflow: hidden;
+  }
+  
+  /* Asegurar que el Sheet no cause overflow */
+  [data-radix-sheet-content] {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* Prevenir overflow en elementos fijos */
+  .fixed {
+    max-width: 100vw;
   }
 }

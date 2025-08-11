@@ -7,14 +7,14 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 const projects = [
-  { id: 1, category: 'interior', location: 'CDMX', image: 'https://placehold.co/600x400', hint: 'wood floor interior' },
-  { id: 2, category: 'exterior', location: 'Guadalajara', image: 'https://placehold.co/600x400', hint: 'wood deck terrace' },
-  { id: 3, category: 'escaleras', location: 'Monterrey', image: 'https://placehold.co/600x400', hint: 'wooden stairs home' },
-  { id: 4, category: 'interior', location: 'Puebla', image: 'https://placehold.co/600x400', hint: 'parquet floor bedroom' },
-  { id: 5, category: 'decks', location: 'Cancún', image: 'https://placehold.co/600x400', hint: 'poolside wood deck' },
-  { id: 6, category: 'interior', location: 'Querétaro', image: 'https://placehold.co/600x400', hint: 'laminate floor office' },
-  { id: 7, category: 'escaleras', location: 'CDMX', image: 'https://placehold.co/600x400', hint: 'modern wood stairs' },
-  { id: 8, category: 'decks', location: 'Valle de Bravo', image: 'https://placehold.co/600x400', hint: 'rustic wood cabin' },
+  { id: 1, category: 'interior', location: 'CDMX', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'wood floor interior' },
+  { id: 2, category: 'exterior', location: 'Guadalajara', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'wood deck terrace' },
+  { id: 3, category: 'escaleras', location: 'Monterrey', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'wooden stairs home' },
+  { id: 4, category: 'interior', location: 'Puebla', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'parquet floor bedroom' },
+  { id: 5, category: 'decks', location: 'Cancún', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'poolside wood deck' },
+  { id: 6, category: 'interior', location: 'Querétaro', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'laminate floor office' },
+  { id: 7, category: 'escaleras', location: 'CDMX', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'modern wood stairs' },
+  { id: 8, category: 'decks', location: 'Valle de Bravo', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg', hint: 'rustic wood cabin' },
 ];
 
 const filters = [

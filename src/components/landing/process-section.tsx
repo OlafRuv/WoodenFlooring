@@ -41,8 +41,8 @@ export default function ProcessSection() {
           <div className="grid gap-12 md:grid-cols-2">
             {processSteps.map((step, index) => (
               <div key={step.title} className={`relative flex items-start gap-6 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse md:text-right'}`}>
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-card hidden md:block" />
-                <div className="flex-shrink-0 bg-primary/10 p-4 rounded-lg">
+                <div className="flex-shrink-0 bg-primary/10 p-4 rounded-lg relative">
+                  <div className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-primary border-2 border-card" />
                   {step.icon}
                 </div>
                 <div className="flex-1">

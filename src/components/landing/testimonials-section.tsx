@@ -31,13 +31,18 @@ const testimonials = [
   },
 ];
 
-const StarRating = ({ rating = 5 }: { rating?: number }) => (
-  <div className="flex gap-1 text-yellow-400">
-    {Array.from({ length: rating }).map((_, i) => (
-      <Star key={i} className="w-5 h-5 fill-current" />
-    ))}
-  </div>
-);
+const StarRating = ({ rating = 5 }: { rating?: number }) => {
+  const stars = [];
+  for (let i = 0; i < rating; i++) {
+    stars.push(<Star key={i} className="w-5 h-5 fill-current" />);
+  }
+  
+  return (
+    <div className="flex gap-1 text-yellow-400">
+      {stars}
+    </div>
+  );
+};
 
 export default function TestimonialsSection() {
   return (

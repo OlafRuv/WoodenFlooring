@@ -44,11 +44,38 @@ export default function ContactSection() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    // Crear el contenido del email
+    const subject = encodeURIComponent("Consulta desde Casa Venacev - " + values.name)
+    const body = encodeURIComponent(`
+Hola,
+
+He completado el formulario de contacto en el sitio web de Casa Venacev.
+
+Mis datos:
+- Nombre: ${values.name}
+- Email: ${values.email}
+- Teléfono: ${values.phone || 'No proporcionado'}
+
+Mi mensaje:
+${values.message}
+
+Saludos cordiales,
+${values.name}
+    `)
+    
+    // Crear el enlace mailto
+    const mailtoLink = `mailto:contacto@casavenacev.com?subject=${subject}&body=${body}`
+    
+    // Abrir el cliente de email
+    window.open(mailtoLink, '_blank')
+    
+    // Mostrar confirmación
     toast({
-      title: "Mensaje Enviado",
-      description: "Gracias por contactarnos. Nos pondremos en contacto contigo pronto.",
+      title: "Formulario Completado",
+      description: "Se abrirá tu cliente de email. Por favor, envía el mensaje para completar el contacto.",
     })
+    
+    // Limpiar el formulario
     form.reset()
   }
 

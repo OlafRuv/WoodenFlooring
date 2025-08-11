@@ -18,15 +18,15 @@ const Logo = () => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-6 w-6 text-accent"
+      className="h-6 w-6 text-accent flex-shrink-0"
     >
       <path d="M12 2L2 7l10 5 10-5-10-5z" />
       <path d="M2 17l10 5 10-5" />
       <path d="M2 12l10 5 10-5" />
     </svg>
-    <div>
-      <span className="font-bold text-lg font-headline text-foreground">Casa Venacev</span>
-      <p className="text-xs text-muted-foreground -mt-1">Profesionales en Madera</p>
+    <div className="min-w-0">
+      <span className="font-bold text-lg font-headline text-foreground block truncate">Casa Venacev</span>
+      <p className="text-xs text-muted-foreground -mt-1 block truncate">Profesionales en Madera</p>
     </div>
   </Link>
 );
@@ -41,12 +41,12 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 overflow-hidden">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6 max-w-full">
         <Logo />
         <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" prefetch={false}>
+            <Link key={link.name} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors whitespace-nowrap" prefetch={false}>
               {link.name}
             </Link>
           ))}
@@ -57,7 +57,7 @@ export default function Header() {
             </Link>
           </Button>
         </nav>
-        <div className="md:hidden">
+        <div className="md:hidden flex-shrink-0">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">

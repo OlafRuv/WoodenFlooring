@@ -24,12 +24,12 @@ export default function FloatingCTA() {
       href="https://wa.me/5215555555555?text=Hola,%20quisiera%20solicitar%20una%20asesoría%20gratuita."
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50"
       aria-label="Contactar por WhatsApp"
     >
       <Button
         size="lg"
-        className="rounded-full shadow-lg h-16 w-16 p-0 bg-green-500 hover:bg-green-600 text-white flex items-center justify-center transition-transform duration-300 hover:scale-110"
+        className="rounded-full shadow-lg h-14 w-14 md:h-16 md:w-16 p-0 bg-green-500 hover:bg-green-600 text-white flex items-center justify-center transition-transform duration-300 hover:scale-110"
       >
         <WhatsAppIcon />
       </Button>

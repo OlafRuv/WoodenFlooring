@@ -28,6 +28,10 @@ const actionTypes = {
 let count = 0
 
 function genId() {
+  if (typeof window === 'undefined') {
+    // En el servidor, usar un ID estático para evitar problemas de hidratación
+    return 'server-toast-id';
+  }
   count = (count + 1) % Number.MAX_SAFE_INTEGER
   return count.toString()
 }
@@ -172,17 +176,21 @@ function toast({ ...props }: Toast) {
 }
 
 function useToast() {
-  const [state, setState] = React.useState<State>(memoryState)
+  const [state, setState] = React.useState<State>({ toasts: [] })
 
   React.useEffect(() => {
-    listeners.push(setState)
-    return () => {
-      const index = listeners.indexOf(setState)
-      if (index > -1) {
-        listeners.splice(index, 1)
+    // Solo sincronizar con el estado global en el cliente
+    if (typeof window !== 'undefined') {
+      setState(memoryState)
+      listeners.push(setState)
+      return () => {
+        const index = listeners.indexOf(setState)
+        if (index > -1) {
+          listeners.splice(index, 1)
+        }
       }
     }
-  }, [state])
+  }, [])
 
   return {
     ...state,
