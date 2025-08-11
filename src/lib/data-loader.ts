@@ -82,7 +82,11 @@ export function loadContactData(): ContactData {
 // Función para obtener un servicio específico por ID
 export function getServiceById(id: string) {
   const services = loadServicesData();
-  return services.services.find(service => service.id === id);
+  for (const category of services.categories) {
+    const service = category.services.find(service => service.id === id);
+    if (service) return service;
+  }
+  return null;
 }
 
 // Función para obtener un proyecto específico por ID
@@ -106,7 +110,15 @@ export function getHighlightedProjects() {
 // Función para obtener servicios destacados
 export function getHighlightedServices() {
   const services = loadServicesData();
-  return services.services.filter(service => service.highlight);
+  const highlightedServices: any[] = [];
+  services.categories.forEach(category => {
+    category.services.forEach(service => {
+      if (service.highlight) {
+        highlightedServices.push({ ...service, category: category.name });
+      }
+    });
+  });
+  return highlightedServices;
 }
 
 // Función para obtener imágenes de galería por categoría

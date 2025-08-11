@@ -2,70 +2,245 @@
   "title": "Nuestros Servicios",
   "subtitle": "Soluciones integrales para pisos de madera",
   "description": "Ofrecemos una gama completa de servicios para transformar tus espacios con la elegancia natural de la madera.",
-  "services": [
-    {
-      "id": "instalacion",
-      "title": "Instalación Profesional",
-      "description": "Instalación experta de pisos de madera con técnicas avanzadas y garantía de calidad.",
-      "icon": "hammer",
-      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "features": [
-        "Medición y preparación del área",
-        "Instalación con técnicas profesionales",
-        "Acabados perfectos y durables",
-        "Limpieza post-instalación"
-      ],
-      "price": "Desde $150/m²",
-      "duration": "2-5 días",
-      "highlight": true
-    },
-    {
-      "id": "venta",
-      "title": "Venta de Materiales",
-      "description": "Distribuimos la mejor selección de pisos de madera de fabricantes reconocidos.",
-      "icon": "package",
-      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "features": [
-        "Maderas certificadas y sostenibles",
-        "Variedad de especies y acabados",
-        "Asesoría técnica especializada",
-        "Entrega a domicilio incluida"
-      ],
-      "price": "Desde $80/m²",
-      "duration": "Inmediata",
-      "highlight": false
-    },
-    {
-      "id": "mantenimiento",
-      "title": "Mantenimiento y Restauración",
-      "description": "Servicios de mantenimiento preventivo y restauración de pisos de madera existentes.",
-      "icon": "brush",
-      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "features": [
-        "Limpieza profunda y pulido",
-        "Reparación de daños menores",
-        "Aplicación de selladores",
-        "Restauración de acabados"
-      ],
-      "price": "Desde $25/m²",
-      "duration": "1-2 días",
-      "highlight": false
-    },
-    {
-      "id": "asesoria",
-      "title": "Asesoría Técnica",
-      "description": "Consultoría especializada para proyectos de pisos de madera residenciales y comerciales.",
-      "icon": "lightbulb",
-      "image": "https://images.pexels-photos/276724/pexels-photo-276724.jpeg",
-      "features": [
-        "Evaluación del espacio y condiciones",
-        "Recomendaciones de materiales",
-        "Planificación del proyecto",
-        "Seguimiento de la ejecución"
-      ],
-      "price": "Gratuita",
-      "duration": "1-2 horas",
-      "highlight": true
-    }
-  ]
+    "categories": [
+      {
+        "id": "pisos",
+        "name": "Pisos de Madera",
+        "description": "Instalación y mantenimiento en laminados, ingeniería y sólidos con lineamientos y fichas técnicas.",
+        "services": [
+          {
+            "id": "instalacion-mantenimiento",
+            "icon": "hammer",
+            "title": "Instalación y Mantenimiento",
+            "description": "Montaje profesional y cuidado de pisos de madera en todas sus categorías.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Laminados, ingeniería y sólidos",
+              "Proceso conforme a lineamientos y fichas técnicas",
+              "Acabado según pedido"
+            ],
+            "price": "Según m² y especie",
+            "duration": "Según proyecto",
+            "highlight": true
+          },
+          {
+            "id": "duela-ingenieria",
+            "icon": "layers",
+            "title": "Duela de Ingeniería",
+            "description": "Duela premium con ensamble de precisión y materiales certificados.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Machihembrado en 4 caras y biselado",
+              "Resina epóxica en nudos y grietas",
+              "Acabado bajo pedido",
+              "Núcleo de melina/roble y trasera de maple",
+              "Prensado en caliente con resina urea",
+              "Sometido a pruebas de calidad",
+              "Materia prima americana, tecnología europea"
+            ],
+            "note": "Ejemplo: Tzalam 7 cm · barniz semi mate",
+            "price": "Según especie y ancho",
+            "duration": "Según disponibilidad",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "id": "disenos",
+        "name": "Diseños y Patrones",
+        "description": "Patrones de instalación para personalizar el espacio.",
+        "services": [
+          {
+            "id": "patrones-instalacion",
+            "icon": "grid",
+            "title": "Patrones de Instalación",
+            "description": "Selección de patrones clásicos y contemporáneos.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Parquet al cuadro",
+              "Alineado",
+              "Canterbury",
+              "Flecha (pluma)"
+            ],
+            "price": "Según patrón",
+            "duration": "Según proyecto",
+            "highlight": true
+          }
+        ]
+      },
+      {
+        "id": "acabados",
+        "name": "Acabados y Color",
+        "description": "Renovación de tono y terminados profesionales.",
+        "services": [
+          {
+            "id": "nuevos-colores",
+            "icon": "palette",
+            "title": "Trabajo de Nuevos Colores",
+            "description": "Cambio de tono sobre madera ya instalada mediante tintas personalizadas.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Impregnación de tinta al gusto del diseño",
+              "Base de terminado tras secado",
+              "Barniz final: mate, semi mate o brillante",
+              "Opciones: aceitado o cera"
+            ],
+            "price": "Según m² y tipo de acabado",
+            "duration": "Depende de superficie",
+            "highlight": true
+          },
+          {
+            "id": "catalogo-colores",
+            "icon": "swatch",
+            "title": "Catálogo de Colores",
+            "description": "Gama de tonos disponibles para personalizar tu madera.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Cloud Grey, Grey Fog, Nordic",
+              "Moka, Caramel, Chestnut",
+              "Rust, Walnut, Tzalam",
+              "Sunset, Amber"
+            ],
+            "price": "Sin costo adicional (aplica al trabajo de color)",
+            "duration": "Según disponibilidad",
+            "highlight": true
+          }
+        ]
+      },
+      {
+        "id": "maderas",
+        "name": "Maderas por Uso",
+        "description": "Especies recomendadas para interior y exterior.",
+        "services": [
+          {
+            "id": "interiores",
+            "icon": "home",
+            "title": "Interiores",
+            "description": "Selección de maderas para ambientes interiores.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Encino americano",
+              "Tzalam",
+              "Roble, Cerezo",
+              "Machiche, Nava, Pino"
+            ],
+            "price": "Según especie",
+            "duration": "Según disponibilidad",
+            "highlight": true
+          },
+          {
+            "id": "exteriores",
+            "icon": "sun",
+            "title": "Exteriores",
+            "description": "Maderas de alto desempeño para intemperie.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Teca",
+              "Cumarú",
+              "Ipe"
+            ],
+            "price": "Según especie",
+            "duration": "Según proyecto",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "id": "arquitectura",
+        "name": "Arquitectura en Madera",
+        "description": "Soluciones constructivas y decorativas en madera.",
+        "services": [
+          {
+            "id": "muros-lambrin",
+            "icon": "panel",
+            "title": "Muros (Lambrín)",
+            "description": "Revestimientos cálidos con acabado profesional.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Diseño e instalación",
+              "Acabado según pedido",
+              "Fichas técnicas de calidad"
+            ],
+            "price": "Según m²",
+            "duration": "Según proyecto",
+            "highlight": true
+          },
+          {
+            "id": "techos-plafon",
+            "icon": "ceiling",
+            "title": "Techos (Plafón)",
+            "description": "Plafones de madera con absorción y estética superior.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Modulación a medida",
+              "Patrones y vetas combinables",
+              "Instalación certificada"
+            ],
+            "price": "Según m²",
+            "duration": "Según proyecto",
+            "highlight": false
+          },
+          {
+            "id": "terrazas-decks",
+            "icon": "deck",
+            "title": "Terrazas (Decks)",
+            "description": "Decks para exterior con especies de alto desempeño.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Teca, Cumarú, Ipe",
+              "Tratamientos para intemperie",
+              "Instalación especializada"
+            ],
+            "price": "Según m² y especie",
+            "duration": "Según proyecto",
+            "highlight": false
+          },
+          {
+            "id": "cabanas",
+            "icon": "cabin",
+            "title": "Cabañas de Madera",
+            "description": "Estructuras y acabados con normativa y control de calidad.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Diseño básico a medida",
+              "Acabados y protecciones",
+              "Fichas técnicas"
+            ],
+            "price": "Según proyecto",
+            "duration": "Según alcance",
+            "highlight": false
+          },
+          {
+            "id": "escaleras",
+            "icon": "stairs",
+            "title": "Escaleras",
+            "description": "Peldaños y barandales en madera con terminados a elección.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Diseño y fabricación",
+              "Instalación precisa",
+              "Acabado según pedido"
+            ],
+            "price": "Según pieza",
+            "duration": "Según proyecto",
+            "highlight": false
+          },
+          {
+            "id": "canchas",
+            "icon": "court",
+            "title": "Canchas",
+            "description": "Superficies deportivas en madera con especificación técnica.",
+            "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+            "features": [
+              "Sistemas de soporte",
+              "Acabados de alto tráfico",
+              "Instalación certificada"
+            ],
+            "price": "Según m²",
+            "duration": "Según proyecto",
+            "highlight": false
+          }
+        ]
+      }
+    ]
 } 

@@ -3,6 +3,7 @@
   "subtitle": "Más de 30 años de experiencia",
   "description": "Somos una empresa mexicana especializada en pisos de madera, comprometida con la calidad, la innovación y la satisfacción del cliente.",
   "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+  "showStatsInsteadOfFeatures": true,
   "features": [
     {
       "title": "Experiencia Comprobada",
@@ -33,7 +34,7 @@
     },
     {
       "label": "Proyectos Completados",
-      "value": "1000+",
+      "value": "500+",
       "icon": "check-circle"
     },
     {
@@ -42,9 +43,9 @@
       "icon": "smile"
     },
     {
-      "label": "Área de Cobertura",
-      "value": "6 Estados",
-      "icon": "map-pin"
+      "label": "Área de Cobertura", 
+      "value": "Toda la República Mexicana",
+      "icon": "flag"
     }
   ]
 } 

@@ -11,11 +11,18 @@ export interface Service {
   highlight: boolean;
 }
 
+export interface ServiceCategory {
+  id: string;
+  name: string;
+  description: string;
+  services: Service[];
+}
+
 export interface ServicesData {
   title: string;
   subtitle: string;
   description: string;
-  services: Service[];
+  categories: ServiceCategory[];
 }
 
 // Tipos para Proyectos
@@ -188,6 +195,7 @@ export interface AboutData {
   subtitle: string;
   description: string;
   image: string;
+  showStatsInsteadOfFeatures: boolean;
   features: {
     title: string;
     description: string;
