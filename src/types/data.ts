@@ -142,7 +142,7 @@ export interface GalleryImage {
   description: string;
   image: string;
   thumbnail: string;
-  project: string;
+  projectId?: string; // Opcional - solo si está vinculado a un proyecto
   materials: string[];
   area: string;
   highlight: boolean;

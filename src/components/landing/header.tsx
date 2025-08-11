@@ -39,7 +39,6 @@ const Logo = () => {
 const navLinks = [
   { name: "Conócenos", href: "#conocenos" },
   { name: "Servicios", href: "#servicios" },
-  { name: "Proyectos", href: "#proyectos" },
   { name: "Galería", href: "#galeria" },
   { name: "Proceso", href: "#proceso" },
   { name: "Testimonios", href: "#testimonios" },

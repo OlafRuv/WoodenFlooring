@@ -82,6 +82,26 @@
       ],
       "highlight": false,
       "completed": "2023-09-05"
+    },
+    {
+      "id": "restauracion-historica",
+      "title": "Casa Histórica en Coyoacán",
+      "type": "Residencial",
+      "category": "Restauración",
+      "description": "Restauración de piso original de 1920 con técnicas tradicionales y preservación histórica.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "icon": "refresh-cw",
+      "area": "120m²",
+      "duration": "12 días",
+      "materials": ["Pino original", "Acabado tradicional", "Preservación histórica"],
+      "features": [
+        "Técnicas tradicionales",
+        "Preservación histórica",
+        "Materiales originales",
+        "Acabado auténtico"
+      ],
+      "highlight": true,
+      "completed": "2023-08-15"
     }
   ]
 } 

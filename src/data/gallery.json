@@ -1,7 +1,7 @@
 {
   "title": "Galería de Trabajos",
   "subtitle": "Nuestros mejores proyectos",
-  "description": "Explora nuestra colección de trabajos realizados que demuestran la calidad y versatilidad de nuestros servicios.",
+  "description": "Explora nuestra colección de trabajos realizados que demuestran la calidad y versatilidad de nuestros servicios. Haz clic en cualquier imagen para ver más detalles del proyecto.",
   "categories": [
     {
       "id": "residencial",
@@ -36,7 +36,7 @@
       "description": "Piso de roble blanco en sala principal con acabado mate",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Casa Moderna en Polanco",
+      "projectId": "casa-moderna",
       "materials": ["Roble blanco", "Acabado mate"],
       "area": "80m²",
       "highlight": true
@@ -48,7 +48,7 @@
       "description": "Continuación del piso de roble en área de comedor",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Casa Moderna en Polanco",
+      "projectId": "casa-moderna",
       "materials": ["Roble blanco", "Acabado mate"],
       "area": "40m²",
       "highlight": false
@@ -60,7 +60,7 @@
       "description": "Piso de teca sostenible en área de trabajo abierta",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Oficina Corporativa en Santa Fe",
+      "projectId": "oficina-corporativa",
       "materials": ["Teca sostenible", "Acabado satinado"],
       "area": "300m²",
       "highlight": true
@@ -72,7 +72,7 @@
       "description": "Pasillos principales con piso de teca y transiciones",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Oficina Corporativa en Santa Fe",
+      "projectId": "oficina-corporativa",
       "materials": ["Teca sostenible", "Acabado satinado"],
       "area": "150m²",
       "highlight": false
@@ -84,7 +84,7 @@
       "description": "Piso de nogal con tratamiento antihumedad en área principal",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Restaurante Gourmet en Roma",
+      "projectId": "restaurante-gourmet",
       "materials": ["Nogal", "Tratamiento antihumedad"],
       "area": "100m²",
       "highlight": true
@@ -96,7 +96,7 @@
       "description": "Instalación artesanal con patrón herringbone en maple",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Departamento de Lujo en Condesa",
+      "projectId": "departamento-lujo",
       "materials": ["Maple", "Patrón herringbone"],
       "area": "80m²",
       "highlight": true
@@ -108,7 +108,7 @@
       "description": "Restauración de piso original de 1920 con técnicas tradicionales",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Casa Histórica en Coyoacán",
+      "projectId": "restauracion-historica",
       "materials": ["Pino original", "Acabado tradicional"],
       "area": "120m²",
       "highlight": true
@@ -120,7 +120,6 @@
       "description": "Piso de madera tratada para uso industrial pesado",
       "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
       "thumbnail": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
-      "project": "Nave Industrial en Tlalnepantla",
       "materials": ["Madera tratada", "Acabado industrial"],
       "area": "500m²",
       "highlight": false

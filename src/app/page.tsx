@@ -2,7 +2,7 @@ import Header from '@/components/landing/header';
 import HeroSection from '@/components/landing/hero-section';
 import AboutSection from '@/components/landing/about-section';
 import ServicesSection from '@/components/landing/services-section';
-import ProjectsSection from '@/components/landing/projects-section';
+// import ProjectsSection from '@/components/landing/projects-section';
 import GallerySection from '@/components/landing/gallery-section';
 import ProcessSection from '@/components/landing/process-section';
 import DifferentiatorsSection from '@/components/landing/differentiators-section';
@@ -19,7 +19,7 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <GallerySection />
         <ProcessSection />
         <DifferentiatorsSection />
