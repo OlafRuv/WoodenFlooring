@@ -1,0 +1,49 @@
+{
+  "title": "¿Por qué elegirnos?",
+  "subtitle": "Lo que nos hace diferentes",
+  "description": "Descubre las ventajas que nos distinguen de la competencia y por qué somos la mejor opción para tu proyecto de piso de madera.",
+  "differentiators": [
+    {
+      "id": "experiencia",
+      "title": "Experiencia Comprobada",
+      "description": "Más de 30 años en el mercado nos han dado el conocimiento y la habilidad para enfrentar cualquier desafío.",
+      "icon": "award",
+      "color": "blue"
+    },
+    {
+      "id": "calidad",
+      "title": "Calidad Premium Garantizada",
+      "description": "Trabajamos únicamente con los mejores materiales y aplicamos las técnicas más avanzadas del mercado.",
+      "icon": "star",
+      "color": "yellow"
+    },
+    {
+      "id": "personalizacion",
+      "title": "Servicio Personalizado",
+      "description": "Cada proyecto es único y merece atención especial. Nos adaptamos a tus necesidades específicas.",
+      "icon": "users",
+      "color": "green"
+    },
+    {
+      "id": "garantia",
+      "title": "Garantía Extendida",
+      "description": "Respaldamos nuestro trabajo con garantías que van más allá de lo estándar en la industria.",
+      "icon": "shield",
+      "color": "red"
+    },
+    {
+      "id": "tecnologia",
+      "title": "Tecnología Avanzada",
+      "description": "Utilizamos las herramientas y técnicas más modernas para garantizar resultados perfectos.",
+      "icon": "zap",
+      "color": "purple"
+    },
+    {
+      "id": "sostenibilidad",
+      "title": "Compromiso Sostenible",
+      "description": "Trabajamos con maderas certificadas y prácticas responsables con el medio ambiente.",
+      "icon": "leaf",
+      "color": "emerald"
+    }
+  ]
+} 

@@ -1,0 +1,23 @@
+{
+  "title": "Contáctanos",
+  "subtitle": "Estamos aquí para ayudarte",
+  "description": "¿Tienes un proyecto en mente? Contáctanos para una consulta gratuita y descubre cómo podemos transformar tu espacio.",
+  "form": {
+    "title": "Envía un mensaje",
+    "description": "Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.",
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Cuéntanos sobre tu proyecto",
+      "submit": "Enviar mensaje"
+    }
+  },
+  "info": {
+    "title": "Información de contacto",
+    "address": "Av. Insurgentes Sur 1234, Col. Del Valle, CDMX",
+    "phone": "+52 55 5555 5555",
+    "email": "info@casavenacev.com",
+    "hours": "Lunes a Viernes: 8:00 AM - 6:00 PM, Sábados: 9:00 AM - 2:00 PM"
+  }
+} 

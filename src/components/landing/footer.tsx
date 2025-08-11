@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
+import { loadCompanyData } from '@/lib/data-loader';
 
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2" prefetch={false}>
@@ -27,6 +28,7 @@ const Logo = () => (
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState('');
+  const companyData = loadCompanyData();
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear().toString());
@@ -44,7 +46,7 @@ export default function Footer() {
       <div className="container mx-auto py-12 px-4 md:px-6 grid gap-8 md:grid-cols-3">
         <div className="space-y-4">
           <Logo />
-          <p className="text-muted-foreground text-sm">Profesionales en Madera. Transformando espacios desde 1994.</p>
+          <p className="text-muted-foreground text-sm">{companyData.company.description}</p>
         </div>
         <div className="space-y-2">
           <h4 className="font-semibold text-foreground">Navegación</h4>
@@ -64,17 +66,17 @@ export default function Footer() {
             <p>Bruno Ventura Acevedo</p>
             <p>Salvador Ventura Rangel</p>
             <p className="mt-2">
-              <a href="tel:+5215555555555" className="hover:text-primary">Tel: 55 5555 5555</a>
+              <a href={`tel:${companyData.contact.phone}`} className="hover:text-primary">Tel: {companyData.contact.phone}</a>
             </p>
             <p>
-              <a href="mailto:contacto@casavenacev.com" className="hover:text-primary">contacto@casavenacev.com</a>
+              <a href={`mailto:${companyData.contact.email}`} className="hover:text-primary">{companyData.contact.email}</a>
             </p>
           </div>
         </div>
       </div>
       <div className="border-t border-border">
         <div className="container mx-auto py-4 px-4 md:px-6 flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Casa Venacev. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} {companyData.company.name}. Todos los derechos reservados.</p>
           <Link href="/aviso-de-privacidad" className="hover:text-primary mt-2 md:mt-0" prefetch={false}>
             Aviso de Privacidad
           </Link>

@@ -1,0 +1,50 @@
+{
+  "title": "Conócenos",
+  "subtitle": "Más de 30 años de experiencia",
+  "description": "Somos una empresa mexicana especializada en pisos de madera, comprometida con la calidad, la innovación y la satisfacción del cliente.",
+  "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+  "features": [
+    {
+      "title": "Experiencia Comprobada",
+      "description": "Más de tres décadas transformando espacios con la elegancia natural de la madera.",
+      "icon": "award"
+    },
+    {
+      "title": "Calidad Premium",
+      "description": "Trabajamos únicamente con los mejores materiales y técnicas de instalación.",
+      "icon": "star"
+    },
+    {
+      "title": "Servicio Personalizado",
+      "description": "Cada proyecto es único y merece atención especial y dedicación exclusiva.",
+      "icon": "users"
+    },
+    {
+      "title": "Garantía Total",
+      "description": "Respaldamos nuestro trabajo con garantías extendidas y servicio post-venta.",
+      "icon": "shield"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Años de Experiencia",
+      "value": "30+",
+      "icon": "clock"
+    },
+    {
+      "label": "Proyectos Completados",
+      "value": "1000+",
+      "icon": "check-circle"
+    },
+    {
+      "label": "Clientes Satisfechos",
+      "value": "500+",
+      "icon": "smile"
+    },
+    {
+      "label": "Área de Cobertura",
+      "value": "6 Estados",
+      "icon": "map-pin"
+    }
+  ]
+} 

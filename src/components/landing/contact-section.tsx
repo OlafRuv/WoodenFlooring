@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, User } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { loadContactData, loadCompanyData } from '@/lib/data-loader'
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -32,6 +33,8 @@ const formSchema = z.object({
 
 export default function ContactSection() {
   const { toast } = useToast()
+  const contactData = loadContactData()
+  const companyData = loadCompanyData()
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -64,7 +67,7 @@ ${values.name}
     `)
     
     // Crear el enlace mailto
-    const mailtoLink = `mailto:contacto@casavenacev.com?subject=${subject}&body=${body}`
+    const mailtoLink = `mailto:${companyData.contact.email}?subject=${subject}&body=${body}`
     
     // Abrir el cliente de email
     window.open(mailtoLink, '_blank')
@@ -84,10 +87,10 @@ ${values.name}
       <div className="container mx-auto grid items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
         <div className="space-y-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-accent">
-            Contacta a un Especialista
+            {contactData.title}
           </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            ¿Listo para iniciar tu proyecto? Nuestro equipo de asesores está aquí para ayudarte. Contáctanos para una asesoría gratuita y personalizada.
+            {contactData.description}
           </p>
           <div className="space-y-4">
             <div className="flex items-center gap-4">
@@ -96,8 +99,8 @@ ${values.name}
               </div>
               <div>
                 <h3 className="text-xl font-semibold">Bruno Ventura Acevedo</h3>
-                <a href="tel:+5215555555555" className="text-muted-foreground hover:text-accent flex items-center gap-2">
-                  <Phone className="w-4 h-4" /> 55 5555 5555
+                <a href={`tel:${companyData.contact.phone}`} className="text-muted-foreground hover:text-accent flex items-center gap-2">
+                  <Phone className="w-4 h-4" /> {companyData.contact.phone}
                 </a>
               </div>
             </div>
@@ -107,8 +110,8 @@ ${values.name}
               </div>
               <div>
                 <h3 className="text-xl font-semibold">Salvador Ventura Rangel</h3>
-                <a href="tel:+5215555555556" className="text-muted-foreground hover:text-accent flex items-center gap-2">
-                  <Phone className="w-4 h-4" /> 55 5555 5556
+                <a href={`tel:${companyData.contact.phone}`} className="text-muted-foreground hover:text-accent flex items-center gap-2">
+                  <Phone className="w-4 h-4" /> {companyData.contact.phone}
                 </a>
               </div>
             </div>
@@ -122,7 +125,7 @@ ${values.name}
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Nombre</FormLabel>
+                    <FormLabel>{contactData.form.fields.name}</FormLabel>
                     <FormControl>
                       <Input placeholder="Tu nombre completo" {...field} />
                     </FormControl>
@@ -135,7 +138,7 @@ ${values.name}
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Correo Electrónico</FormLabel>
+                    <FormLabel>{contactData.form.fields.email}</FormLabel>
                     <FormControl>
                       <Input placeholder="tu@correo.com" {...field} />
                     </FormControl>
@@ -148,7 +151,7 @@ ${values.name}
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Teléfono (Opcional)</FormLabel>
+                    <FormLabel>{contactData.form.fields.phone}</FormLabel>
                     <FormControl>
                       <Input placeholder="Tu número de teléfono" {...field} />
                     </FormControl>
@@ -161,7 +164,7 @@ ${values.name}
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Mensaje</FormLabel>
+                    <FormLabel>{contactData.form.fields.message}</FormLabel>
                     <FormControl>
                       <Textarea placeholder="Cuéntanos sobre tu proyecto..." className="min-h-[120px]" {...field} />
                     </FormControl>
@@ -169,7 +172,7 @@ ${values.name}
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full" size="lg">Enviar Mensaje</Button>
+              <Button type="submit" className="w-full" size="lg">{contactData.form.fields.submit}</Button>
             </form>
           </Form>
         </div>

@@ -5,41 +5,49 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Menu, Phone } from 'lucide-react';
 import React from 'react';
+import { loadCompanyData } from '@/lib/data-loader';
 
-const Logo = () => (
-  <Link href="/" className="flex items-center gap-2" prefetch={false}>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-6 w-6 text-accent flex-shrink-0"
-    >
-      <path d="M12 2L2 7l10 5 10-5-10-5z" />
-      <path d="M2 17l10 5 10-5" />
-      <path d="M2 12l10 5 10-5" />
-    </svg>
-    <div className="min-w-0">
-      <span className="font-bold text-lg font-headline text-foreground block truncate">Casa Venacev</span>
-      <p className="text-xs text-muted-foreground -mt-1 block truncate">Profesionales en Madera</p>
-    </div>
-  </Link>
-);
+const Logo = () => {
+  const companyData = loadCompanyData();
+  
+  return (
+    <Link href="/" className="flex items-center gap-2" prefetch={false}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="h-6 w-6 text-accent flex-shrink-0"
+      >
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
+      </svg>
+      <div className="min-w-0">
+        <span className="font-bold text-lg font-headline text-foreground block truncate">{companyData.company.name}</span>
+        <p className="text-xs text-muted-foreground -mt-1 block truncate">{companyData.company.tagline}</p>
+      </div>
+    </Link>
+  );
+};
 
 const navLinks = [
   { name: "Conócenos", href: "#conocenos" },
   { name: "Servicios", href: "#servicios" },
+  { name: "Proyectos", href: "#proyectos" },
   { name: "Galería", href: "#galeria" },
   { name: "Proceso", href: "#proceso" },
   { name: "Testimonios", href: "#testimonios" },
 ];
 
 export default function Header() {
+  const companyData = loadCompanyData();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 overflow-hidden">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6 max-w-full">

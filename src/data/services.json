@@ -1,0 +1,71 @@
+{
+  "title": "Nuestros Servicios",
+  "subtitle": "Soluciones integrales para pisos de madera",
+  "description": "Ofrecemos una gama completa de servicios para transformar tus espacios con la elegancia natural de la madera.",
+  "services": [
+    {
+      "id": "instalacion",
+      "title": "Instalación Profesional",
+      "description": "Instalación experta de pisos de madera con técnicas avanzadas y garantía de calidad.",
+      "icon": "hammer",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "features": [
+        "Medición y preparación del área",
+        "Instalación con técnicas profesionales",
+        "Acabados perfectos y durables",
+        "Limpieza post-instalación"
+      ],
+      "price": "Desde $150/m²",
+      "duration": "2-5 días",
+      "highlight": true
+    },
+    {
+      "id": "venta",
+      "title": "Venta de Materiales",
+      "description": "Distribuimos la mejor selección de pisos de madera de fabricantes reconocidos.",
+      "icon": "package",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "features": [
+        "Maderas certificadas y sostenibles",
+        "Variedad de especies y acabados",
+        "Asesoría técnica especializada",
+        "Entrega a domicilio incluida"
+      ],
+      "price": "Desde $80/m²",
+      "duration": "Inmediata",
+      "highlight": false
+    },
+    {
+      "id": "mantenimiento",
+      "title": "Mantenimiento y Restauración",
+      "description": "Servicios de mantenimiento preventivo y restauración de pisos de madera existentes.",
+      "icon": "brush",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "features": [
+        "Limpieza profunda y pulido",
+        "Reparación de daños menores",
+        "Aplicación de selladores",
+        "Restauración de acabados"
+      ],
+      "price": "Desde $25/m²",
+      "duration": "1-2 días",
+      "highlight": false
+    },
+    {
+      "id": "asesoria",
+      "title": "Asesoría Técnica",
+      "description": "Consultoría especializada para proyectos de pisos de madera residenciales y comerciales.",
+      "icon": "lightbulb",
+      "image": "https://images.pexels-photos/276724/pexels-photo-276724.jpeg",
+      "features": [
+        "Evaluación del espacio y condiciones",
+        "Recomendaciones de materiales",
+        "Planificación del proyecto",
+        "Seguimiento de la ejecución"
+      ],
+      "price": "Gratuita",
+      "duration": "1-2 horas",
+      "highlight": true
+    }
+  ]
+} 

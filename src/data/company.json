@@ -1,0 +1,52 @@
+{
+  "company": {
+    "name": "Casa Venacev",
+    "tagline": "Profesionales en Madera",
+    "description": "Más de 30 años de experiencia en instalación, venta y mantenimiento de pisos de madera en toda la República Mexicana.",
+    "founded": "1994",
+    "experience": "30+ años",
+    "projects": "1000+",
+    "clients": "500+"
+  },
+  "contact": {
+    "phone": "+52 55 5555 5555",
+    "whatsapp": "+52 55 5555 5555",
+    "email": "info@casavenacev.com",
+    "address": "Av. Insurgentes Sur 1234, Col. Del Valle, CDMX",
+    "hours": "Lunes a Viernes: 8:00 AM - 6:00 PM, Sábados: 9:00 AM - 2:00 PM"
+  },
+  "social": {
+    "facebook": "https://facebook.com/casavenacev",
+    "instagram": "https://instagram.com/casavenacev",
+    "twitter": "https://twitter.com/casavenacev",
+    "linkedin": "https://linkedin.com/company/casavenacev"
+  },
+  "services": {
+    "main": [
+      "Instalación de pisos de madera",
+      "Venta de materiales",
+      "Mantenimiento y restauración",
+      "Asesoría técnica"
+    ],
+    "specialties": [
+      "Pisos residenciales",
+      "Pisos comerciales",
+      "Pisos industriales",
+      "Restauración histórica"
+    ]
+  },
+  "certifications": [
+    "ISO 9001:2015",
+    "Certificación FSC",
+    "Miembro de la Cámara Mexicana de la Construcción",
+    "Certificación LEED"
+  ],
+  "coverage": [
+    "Ciudad de México",
+    "Estado de México",
+    "Querétaro",
+    "Puebla",
+    "Morelos",
+    "Hidalgo"
+  ]
+} 
