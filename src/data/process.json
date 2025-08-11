@@ -1,0 +1,104 @@
+{
+  "title": "Nuestro Proceso",
+  "subtitle": "Cómo trabajamos para ti",
+  "description": "Un proceso probado y eficiente que garantiza resultados excepcionales en cada proyecto.",
+  "steps": [
+    {
+      "id": "consulta",
+      "step": 1,
+      "title": "Consulta Inicial",
+      "description": "Primera reunión para entender tus necesidades y evaluar el espacio.",
+      "icon": "message-circle",
+      "duration": "1-2 horas",
+      "activities": [
+        "Evaluación del espacio",
+        "Revisión de requerimientos",
+        "Presupuesto inicial",
+        "Programación de visita técnica"
+      ],
+      "deliverables": [
+        "Propuesta inicial",
+        "Cronograma tentativo",
+        "Lista de materiales recomendados"
+      ]
+    },
+    {
+      "id": "visita-tecnica",
+      "step": 2,
+      "title": "Visita Técnica",
+      "description": "Análisis detallado del espacio y mediciones precisas.",
+      "icon": "ruler",
+      "duration": "2-3 horas",
+      "activities": [
+        "Mediciones precisas",
+        "Análisis de condiciones",
+        "Evaluación de subestructura",
+        "Fotografías del área"
+      ],
+      "deliverables": [
+        "Planos técnicos",
+        "Presupuesto detallado",
+        "Cronograma definitivo",
+        "Contrato de servicios"
+      ]
+    },
+    {
+      "id": "planificacion",
+      "step": 3,
+      "title": "Planificación y Preparación",
+      "description": "Organización logística y preparación del área de trabajo.",
+      "icon": "calendar",
+      "duration": "1-2 días",
+      "activities": [
+        "Coordinación de equipos",
+        "Preparación de materiales",
+        "Protección de áreas",
+        "Logística de instalación"
+      ],
+      "deliverables": [
+        "Programa de trabajo",
+        "Lista de materiales",
+        "Plan de seguridad"
+      ]
+    },
+    {
+      "id": "instalacion",
+      "step": 4,
+      "title": "Instalación Profesional",
+      "icon": "hammer",
+      "description": "Ejecución del proyecto con técnicas profesionales y supervisión constante.",
+      "duration": "Varía según proyecto",
+      "activities": [
+        "Preparación de subestructura",
+        "Instalación de pisos",
+        "Acabados y detalles",
+        "Control de calidad"
+      ],
+      "deliverables": [
+        "Piso instalado",
+        "Acabados aplicados",
+        "Documentación fotográfica"
+      ]
+    },
+    {
+      "id": "finalizacion",
+      "step": 5,
+      "title": "Finalización y Entrega",
+      "description": "Limpieza final, inspección de calidad y entrega del proyecto.",
+      "icon": "check-circle",
+      "duration": "1 día",
+      "activities": [
+        "Limpieza del área",
+        "Inspección final",
+        "Pruebas de funcionamiento",
+        "Entrega de garantías"
+      ],
+      "deliverables": [
+        "Proyecto terminado",
+        "Certificado de garantía",
+        "Manual de mantenimiento",
+        "Seguimiento post-entrega"
+      ]
+    }
+  ]
+} 

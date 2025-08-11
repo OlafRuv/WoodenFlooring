@@ -1,0 +1,87 @@
+{
+  "title": "Nuestros Proyectos",
+  "subtitle": "Transformando espacios con elegancia",
+  "description": "Descubre algunos de nuestros trabajos más destacados que demuestran la calidad y creatividad de nuestro equipo.",
+  "projects": [
+    {
+      "id": "casa-moderna",
+      "title": "Casa Moderna en Polanco",
+      "type": "Residencial",
+      "category": "Interior",
+      "description": "Instalación de piso de roble blanco en una casa moderna de 300m² con acabados premium.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "icon": "home",
+      "area": "300m²",
+      "duration": "8 días",
+      "materials": ["Roble blanco", "Acabado mate", "Instalación flotante"],
+      "features": [
+        "Diseño personalizado",
+        "Acabados premium",
+        "Instalación profesional",
+        "Garantía extendida"
+      ],
+      "highlight": true,
+      "completed": "2024-01-15"
+    },
+    {
+      "id": "oficina-corporativa",
+      "title": "Oficina Corporativa en Santa Fe",
+      "type": "Comercial",
+      "category": "Oficina",
+      "description": "Renovación completa de pisos en oficinas corporativas con madera de teca sostenible.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "icon": "building",
+      "area": "800m²",
+      "duration": "15 días",
+      "materials": ["Teca sostenible", "Acabado satinado", "Instalación adhesiva"],
+      "features": [
+        "Materiales sostenibles",
+        "Instalación nocturna",
+        "Mínima interrupción",
+        "Certificación LEED"
+      ],
+      "highlight": true,
+      "completed": "2023-11-20"
+    },
+    {
+      "id": "restaurante-gourmet",
+      "title": "Restaurante Gourmet en Roma",
+      "type": "Comercial",
+      "category": "Restaurante",
+      "description": "Piso de madera de nogal con tratamiento especial para áreas de alta humedad.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "icon": "utensils",
+      "area": "150m²",
+      "duration": "5 días",
+      "materials": ["Nogal", "Tratamiento antihumedad", "Acabado brillante"],
+      "features": [
+        "Resistente a humedad",
+        "Fácil mantenimiento",
+        "Acabado elegante",
+        "Durabilidad garantizada"
+      ],
+      "highlight": false,
+      "completed": "2023-10-10"
+    },
+    {
+      "id": "departamento-lujo",
+      "title": "Departamento de Lujo en Condesa",
+      "type": "Residencial",
+      "category": "Apartamento",
+      "description": "Piso de madera de maple con diseño herringbone en departamento de lujo.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "icon": "apartment",
+      "area": "120m²",
+      "duration": "6 días",
+      "materials": ["Maple", "Patrón herringbone", "Acabado natural"],
+      "features": [
+        "Diseño herringbone",
+        "Madera premium",
+        "Instalación artesanal",
+        "Acabado natural"
+      ],
+      "highlight": false,
+      "completed": "2023-09-05"
+    }
+  ]
+} 

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { loadCompanyData } from '@/lib/data-loader';
 
 const WhatsAppIcon = () => (
   <svg
@@ -19,9 +20,15 @@ const WhatsAppIcon = () => (
 );
 
 export default function FloatingCTA() {
+  const companyData = loadCompanyData();
+  
+  // Crear el mensaje de WhatsApp
+  const whatsappMessage = encodeURIComponent("Hola, quisiera solicitar una asesoría gratuita.");
+  const whatsappUrl = `https://wa.me/${companyData.contact.whatsapp.replace('+', '')}?text=${whatsappMessage}`;
+
   return (
     <a
-      href="https://wa.me/5215555555555?text=Hola,%20quisiera%20solicitar%20una%20asesoría%20gratuita."
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50"

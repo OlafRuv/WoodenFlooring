@@ -1,0 +1,79 @@
+{
+  "title": "Lo que dicen nuestros clientes",
+  "subtitle": "Testimonios de satisfacción",
+  "description": "Descubre por qué nuestros clientes confían en nosotros para transformar sus espacios con pisos de madera.",
+  "testimonials": [
+    {
+      "id": "maria-gonzalez",
+      "name": "María González",
+      "role": "Propietaria de Casa",
+      "location": "Polanco, CDMX",
+      "rating": 5,
+      "content": "Excelente trabajo en la instalación de nuestro piso de madera. El equipo fue muy profesional, limpio y respetuoso. El resultado superó nuestras expectativas.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "project": "Casa Moderna en Polanco",
+      "date": "2024-01-20",
+      "highlight": true
+    },
+    {
+      "id": "olaf-ruvalcaba",
+      "name": "Olaf Ruvalcaba",
+      "role": "Propietaria de Hacienda",
+      "location": "Atotonilco el Alto, Jalisco",
+      "rating": 5,
+      "content": "Mi rancheria nunca se había visto tan bonita. El piso de madera es de calidad y el acabado es perfecto. El equipo de Casa Venacev es muy profesional y se preocupa por el cliente.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "project": "Rancheria en Atotonilco el Alto, Jalisco",
+      "date": "2025-01-20",
+      "highlight": true
+    },
+    {
+      "id": "carlos-rodriguez",
+      "name": "Carlos Rodríguez",
+      "role": "Director de Operaciones",
+      "location": "Santa Fe, CDMX",
+      "rating": 5,
+      "content": "La renovación de nuestros pisos corporativos fue impecable. Trabajaron en horarios nocturnos para no interrumpir nuestras operaciones. Altamente recomendados.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "project": "Oficina Corporativa en Santa Fe",
+      "date": "2023-12-01",
+      "highlight": true
+    },
+    {
+      "id": "ana-martinez",
+      "name": "Ana Martínez",
+      "role": "Chef Propietaria",
+      "location": "Roma, CDMX",
+      "rating": 5,
+      "content": "El piso de madera en nuestro restaurante no solo se ve hermoso, sino que también es muy resistente. Perfecto para un ambiente de alta humedad.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "project": "Restaurante Gourmet en Roma",
+      "date": "2023-11-15",
+      "highlight": false
+    },
+    {
+      "id": "juan-hernandez",
+      "name": "Juan Hernández",
+      "role": "Arquitecto",
+      "location": "Condesa, CDMX",
+      "rating": 5,
+      "content": "Como arquitecto, aprecio la atención al detalle y la calidad del trabajo. El patrón herringbone quedó perfecto y la instalación fue impecable.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "project": "Departamento de Lujo en Condesa",
+      "date": "2023-10-20",
+      "highlight": false
+    },
+    {
+      "id": "lucia-fernandez",
+      "name": "Lucía Fernández",
+      "role": "Interiorista",
+      "location": "Lomas de Chapultepec, CDMX",
+      "rating": 5,
+      "content": "He trabajado con Casa Venacev en varios proyectos y siempre han superado mis expectativas. Su calidad y profesionalismo son excepcionales.",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "project": "Múltiples proyectos residenciales",
+      "date": "2023-09-30",
+      "highlight": false
+    }
+  ]
+} 
