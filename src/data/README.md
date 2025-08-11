@@ -1,201 +1,208 @@
-# 📁 Sistema de Gestión de Contenido JSON
+# Sistema de Gestión de Contenido - Casa Venacev
 
-Este directorio contiene todos los archivos JSON que gestionan el contenido de la aplicación web de Casa Venacev. El sistema está diseñado para facilitar la edición y mantenimiento del contenido sin necesidad de modificar código.
+Este directorio contiene todos los archivos JSON que permiten editar el contenido del sitio web sin modificar el código.
 
-## 🗂️ Estructura de Archivos
+## 📁 Archivos Disponibles
 
-### 📋 Archivos de Contenido Principal
+### 🏢 **company.json** - Información de la Empresa
+- **company.name**: Nombre de la empresa
+- **company.tagline**: Slogan o descripción corta
+- **company.description**: Descripción completa
+- **company.founded**: Año de fundación
+- **company.location**: Ubicación principal
+- **contact**: Información de contacto (teléfono, email, WhatsApp)
+- **social**: Enlaces a redes sociales
 
-- **`hero.json`** - Contenido del hero section (título, descripción, botones)
-- **`about.json`** - Información sobre la empresa y estadísticas
-- **`services.json`** - Lista de servicios ofrecidos
-- **`projects.json`** - Portafolio de proyectos realizados
-- **`gallery.json`** - Galería de imágenes por categorías
-- **`process.json`** - Pasos del proceso de trabajo
-- **`differentiators.json`** - Ventajas competitivas de la empresa
-- **`testimonials.json`** - Testimonios de clientes
-- **`contact.json`** - Información de contacto y formulario
-- **`company.json`** - Información general de la empresa
+### 🎯 **hero.json** - Sección Principal
+- **title**: Título principal del hero
+- **description**: Descripción del hero
+- **backgroundImage**: URL de la imagen de fondo
+- **ctaPrimary**: Botón principal (texto y enlace)
+- **ctaSecondary**: Botón secundario (texto y enlace)
 
-### 🔧 Archivos de Soporte
+### 👥 **about.json** - Sección "Conócenos"
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción principal
+- **image**: URL de la imagen
+- **showStatsInsteadOfFeatures**: `true` para mostrar estadísticas, `false` para características
+- **features**: Array de características de la empresa
+- **stats**: Array de estadísticas (solo si showStatsInsteadOfFeatures es true)
 
-- **`../types/data.ts`** - Definiciones de tipos TypeScript
-- **`../lib/data-loader.ts`** - Utilidades para cargar datos
+### 🛠️ **services.json** - Servicios Ofrecidos
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **categories**: Array de categorías de servicios
+  - Cada categoría tiene un array de **services**
+  - Cada servicio incluye: id, title, description, icon, price, duration, features, highlight
 
-## ✏️ Cómo Editar el Contenido
+### 🖼️ **gallery.json** - Galería de Trabajos
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **categories**: Categorías de trabajos
+- **images**: Array de imágenes
+  - **projectId**: ID opcional del proyecto vinculado (para expandir detalles)
+  - **materials**: Materiales utilizados
+  - **area**: Área del trabajo
+  - **highlight**: Si es destacado
 
-### 1. **Editar Servicios** (`services.json`)
+### 🏗️ **projects.json** - Proyectos Detallados
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **projects**: Array de proyectos
+  - Cada proyecto incluye: id, title, type, category, description, image, area, duration, materials, features, highlight, completed
 
-```json
-{
-  "id": "nuevo-servicio",
-  "title": "Nombre del Servicio",
-  "description": "Descripción del servicio",
-  "icon": "nombre-del-icono",
-  "image": "URL-de-la-imagen",
-  "features": ["Característica 1", "Característica 2"],
-  "price": "Precio del servicio",
-  "duration": "Duración estimada",
-  "highlight": true
-}
-```
+### 🏆 **brands.json** - Marcas con las que Trabajamos
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **brands**: Array de marcas
+  - **id**: Identificador único
+  - **name**: Nombre de la marca
+  - **icon**: Nombre del icono de Simple Icons (ej: "yaak", "fossa", "marko")
+  - **website**: Sitio web de la marca
+  - **category**: Categoría de la marca
+  - **highlight**: Si es marca premium/destacada
 
-**Iconos disponibles:** `hammer`, `package`, `brush`, `lightbulb`
+#### 🎨 **Iconos de Marcas (Simple Icons)**
+Los iconos de las marcas se cargan automáticamente desde [Simple Icons](https://simpleicons.org/). Solo necesitas usar el nombre del icono (slug) en el campo `icon`.
 
-### 2. **Editar Proyectos** (`projects.json`)
+**Ejemplos de iconos disponibles:**
+- `yaak`, `fossa`, `marko`, `rocksdb`, `sparkasse`, `helpdesk`
+- `microsoft`, `apple`, `google`, `amazon`, `netflix`
+- `adobe`, `autodesk`, `intel`, `amd`, `nvidia`
+- Y miles más en [simpleicons.org](https://simpleicons.org/)
 
-```json
-{
-  "id": "nuevo-proyecto",
-  "title": "Nombre del Proyecto",
-  "type": "Residencial/Comercial/Industrial",
-  "category": "Interior/Exterior/Oficina/etc",
-  "description": "Descripción del proyecto",
-  "image": "URL-de-la-imagen",
-  "icon": "nombre-del-icono",
-  "area": "Área en m²",
-  "duration": "Duración del proyecto",
-  "materials": ["Material 1", "Material 2"],
-  "features": ["Característica 1", "Característica 2"],
-  "highlight": true,
-  "completed": "YYYY-MM-DD"
-}
-```
+**Para agregar una nueva marca:**
+1. Busca el icono en [simpleicons.org](https://simpleicons.org/)
+2. Usa el nombre del icono (slug) en el campo `icon`
+3. El sistema cargará automáticamente el SVG oficial
 
-**Iconos disponibles:** `home`, `building`, `utensils`, `apartment`
+### 🔄 **process.json** - Proceso de Trabajo
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **steps**: Array de pasos del proceso
+  - Cada paso incluye: number, title, description, icon
 
-### 3. **Editar Testimonios** (`testimonials.json`)
+### ⭐ **differentiators.json** - Diferenciadores
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **points**: Array de puntos diferenciadores
+  - Cada punto incluye: title, description, icon
 
-```json
-{
-  "id": "nuevo-testimonio",
-  "name": "Nombre del Cliente",
-  "role": "Cargo o Rol",
-  "location": "Ubicación",
-  "rating": 5,
-  "content": "Contenido del testimonio",
-  "image": "URL-de-la-imagen",
-  "project": "Proyecto relacionado",
-  "date": "YYYY-MM-DD",
-  "highlight": true
-}
-```
+### 💬 **testimonials.json** - Testimonios de Clientes
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **testimonials**: Array de testimonios
+  - Cada testimonio incluye: id, name, role, location, rating, content, image, project, date, highlight
 
-### 4. **Editar Galería** (`gallery.json`)
+### 📞 **contact.json** - Formulario de Contacto
+- **title**: Título de la sección
+- **subtitle**: Subtítulo
+- **description**: Descripción general
+- **form**: Configuración del formulario
+  - **fields**: Campos del formulario
+  - **submitButton**: Texto del botón de envío
+- **contactInfo**: Información de contacto adicional
 
-```json
-{
-  "id": "nueva-imagen",
-  "title": "Título de la Imagen",
-  "category": "ID-de-categoria",
-  "description": "Descripción de la imagen",
-  "image": "URL-de-la-imagen-principal",
-  "thumbnail": "URL-de-la-miniatura",
-  "project": "Proyecto relacionado",
-  "materials": ["Material 1", "Material 2"],
-  "area": "Área en m²",
-  "highlight": true
-}
-```
+## 🎨 **Iconos Disponibles**
 
-## 🎨 Personalización de Iconos
+Puedes usar cualquiera de estos iconos de Lucide React en los campos `icon`:
 
-Los iconos utilizan nombres de Lucide React. Puedes ver todos los iconos disponibles en: [https://lucide.dev/icons/](https://lucide.dev/icons/)
+### Básicos
+- `home`, `building`, `factory`, `apartment`, `office`
+- `phone`, `mail`, `map-pin`, `globe`, `clock`
+- `star`, `award`, `shield`, `check-circle`
+- `users`, `user`, `smile`, `heart`
 
-### Iconos Comunes Usados:
-- `home` - Casa
-- `building` - Edificio
-- `hammer` - Martillo
-- `star` - Estrella
-- `award` - Premio
-- `users` - Usuarios
-- `shield` - Escudo
-- `check-circle` - Círculo con check
+### Herramientas
+- `hammer`, `wrench`, `screwdriver`, `drill`
+- `brush`, `paintbrush`, `palette`
+- `ruler`, `measuring-tape`, `square`
+- `lightbulb`, `bulb`, `zap`
 
-## 📱 Responsive Images
+### Materiales
+- `tree`, `leaf`, `wood`, `forest`
+- `package`, `box`, `cube`
+- `truck`, `car`, `bike`
 
-Para las imágenes, se recomienda usar:
-- **Imágenes principales:** 1200x800px o similar
-- **Miniaturas:** 400x300px
-- **Formatos:** JPG para fotos, PNG para gráficos
-- **Optimización:** Comprimir para web (máximo 500KB)
+### Proceso
+- `refresh-cw`, `rotate-ccw`, `settings`
+- `play`, `pause`, `stop`
+- `arrow-right`, `arrow-left`, `chevron-right`
 
-## 🔄 Actualización en Tiempo Real
+## 🖼️ **Imágenes Recomendadas**
 
-Los cambios en los archivos JSON se reflejan automáticamente en la aplicación. Solo necesitas:
+- **Formato**: JPG o PNG
+- **Tamaño**: Mínimo 800x600px, ideal 1200x800px
+- **Calidad**: Alta resolución para dispositivos retina
+- **Peso**: Máximo 500KB por imagen
+- **Fuentes**: Pexels, Unsplash, o imágenes propias
 
-1. Editar el archivo JSON correspondiente
-2. Guardar el archivo
-3. La aplicación se actualizará automáticamente
+## ⚠️ **Solución de Problemas**
 
-## ⚠️ Consideraciones Importantes
+### Error: "Cannot find module '@/data/...'"
+- Verifica que el archivo JSON existe en la carpeta `src/data/`
+- Asegúrate de que el nombre del archivo coincida exactamente
 
-### 1. **Formato JSON**
-- Mantén la sintaxis JSON válida
-- Usa comillas dobles para strings
-- No uses comas al final de arrays/objetos
-- Valida el JSON antes de guardar
+### Error: "Property '...' does not exist on type..."
+- Verifica que la estructura del JSON coincida con los tipos en `src/types/data.ts`
+- Asegúrate de que todos los campos requeridos estén presentes
 
-### 2. **IDs Únicos**
-- Cada elemento debe tener un `id` único
-- Los IDs no deben contener espacios ni caracteres especiales
-- Usa guiones medios para separar palabras
+### Imagen no se muestra
+- Verifica que la URL de la imagen sea válida y accesible
+- Asegúrate de que la imagen tenga el formato correcto
+- Verifica que no haya problemas de CORS
 
-### 3. **URLs de Imágenes**
-- Asegúrate de que las URLs sean accesibles
-- Usa HTTPS para producción
-- Considera usar un CDN para mejor rendimiento
+### Icono no se muestra
+- Verifica que el nombre del icono esté en la lista de iconos disponibles
+- Asegúrate de que el nombre esté escrito correctamente (sensible a mayúsculas/minúsculas)
 
-### 4. **Caracteres Especiales**
-- Usa entidades HTML para caracteres especiales
-- `&` → `&amp;`
-- `<` → `&lt;`
-- `>` → `&gt;`
+### Icono de marca no se muestra
+- Verifica que el nombre del icono exista en [simpleicons.org](https://simpleicons.org/)
+- Asegúrate de usar el slug exacto del icono
+- Revisa la consola del navegador para errores de carga
 
-## 🚀 Ejemplos de Uso
+## 🔧 **Personalización Avanzada**
 
-### Agregar un Nuevo Servicio
+### Agregar Nuevas Categorías
+1. Agrega la nueva categoría en el JSON correspondiente
+2. Actualiza los tipos en `src/types/data.ts` si es necesario
+3. El componente se actualizará automáticamente
 
-1. Abre `services.json`
-2. Agrega un nuevo objeto al array `services`
-3. Completa todos los campos requeridos
-4. Guarda el archivo
+### Cambiar Colores y Estilos
+- Los colores se controlan desde `tailwind.config.ts`
+- Los estilos se pueden modificar en los componentes individuales
+- Usa las clases de Tailwind CSS para personalización
 
-### Modificar Información de Contacto
+### Agregar Nuevos Campos
+1. Agrega el campo en el JSON
+2. Actualiza la interfaz TypeScript correspondiente
+3. Modifica el componente para usar el nuevo campo
 
-1. Abre `company.json`
-2. Edita la sección `contact`
-3. Actualiza teléfonos, emails, direcciones
-4. Guarda el archivo
+## 📱 **Responsive Design**
 
-### Cambiar Contenido del Hero
+Todos los componentes están optimizados para:
+- **Mobile**: 320px - 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: 1024px+
 
-1. Abre `hero.json`
-2. Modifica `title`, `subtitle`, `description`
-3. Actualiza URLs de imágenes si es necesario
-4. Guarda el archivo
+Los breakpoints se manejan automáticamente con Tailwind CSS.
 
-## 🆘 Solución de Problemas
+## 🚀 **Performance**
 
-### Error de Sintaxis JSON
-- Usa un validador JSON online
-- Verifica comas y comillas
-- Asegúrate de que todos los brackets estén cerrados
+- Las imágenes se optimizan automáticamente con Next.js
+- Los iconos SVG se cargan dinámicamente solo cuando son necesarios
+- Los datos se cargan estáticamente en build time
+- No hay llamadas a APIs externas en tiempo de ejecución
+- El sitio es completamente estático y rápido
 
-### Imágenes No Se Muestran
-- Verifica que las URLs sean correctas
-- Asegúrate de que las imágenes sean accesibles
-- Revisa la consola del navegador para errores
+---
 
-### Contenido No Se Actualiza
-- Verifica que el archivo se haya guardado
-- Recarga la página del navegador
-- Revisa la consola para errores de TypeScript
-
-## 📞 Soporte
-
-Si tienes problemas con la edición del contenido:
-1. Revisa la consola del navegador
-2. Verifica la sintaxis JSON
-3. Asegúrate de que todos los campos requeridos estén presentes
-4. Contacta al equipo de desarrollo si persiste el problema 
+**Nota**: Siempre haz una copia de seguridad antes de editar los archivos JSON. Los cambios se reflejan inmediatamente al recargar la página. 

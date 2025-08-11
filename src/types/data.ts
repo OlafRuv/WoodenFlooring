@@ -248,3 +248,20 @@ export interface ContactData {
     hours: string;
   };
 } 
+
+// Tipos para Marcas
+export interface Brand {
+  id: string;
+  name: string;
+  icon: string;
+  website: string;
+  category: string;
+  highlight: boolean;
+}
+
+export interface BrandsData {
+  title: string;
+  subtitle: string;
+  description: string;
+  brands: Brand[];
+} 

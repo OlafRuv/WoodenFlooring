@@ -8,6 +8,7 @@ import heroData from '@/data/hero.json';
 import aboutData from '@/data/about.json';
 import differentiatorsData from '@/data/differentiators.json';
 import contactData from '@/data/contact.json';
+import brandsData from '@/data/brands.json';
 
 import type {
   ServicesData,
@@ -19,7 +20,8 @@ import type {
   HeroData,
   AboutData,
   DifferentiatorsData,
-  ContactData
+  ContactData,
+  BrandsData
 } from '@/types/data';
 
 // Función para cargar todos los datos
@@ -77,6 +79,10 @@ export function loadDifferentiatorsData(): DifferentiatorsData {
 
 export function loadContactData(): ContactData {
   return contactData as ContactData;
+}
+
+export function loadBrandsData(): BrandsData {
+  return brandsData;
 }
 
 // Función para obtener un servicio específico por ID

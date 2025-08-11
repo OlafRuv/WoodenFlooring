@@ -1,0 +1,55 @@
+{
+  "title": "Marcas con las que Trabajamos",
+  "subtitle": "Colaboramos con las mejores marcas del mercado",
+  "description": "Nuestros proyectos incluyen materiales y productos de las marcas más reconocidas en la industria de pisos de madera.",
+  "brands": [
+    {
+      "id": "yaak",
+      "name": "Yaak",
+      "icon": "yaak",
+      "website": "https://yaak.com",
+      "category": "pisos",
+      "highlight": true
+    },
+    {
+      "id": "fossa",
+      "name": "Fossa",
+      "icon": "fossa",
+      "website": "https://fossa.com",
+      "category": "pisos",
+      "highlight": true
+    },
+    {
+      "id": "marko",
+      "name": "Marko",
+      "icon": "marko",
+      "website": "https://marko.com",
+      "category": "pisos",
+      "highlight": false
+    },
+    {
+      "id": "rocksdb",
+      "name": "RocksDB",
+      "icon": "rocksdb",
+      "website": "https://rocksdb.org",
+      "category": "pisos",
+      "highlight": true
+    },
+    {
+      "id": "sparkasse",
+      "name": "Sparkasse",
+      "icon": "sparkasse",
+      "website": "https://sparkasse.de",
+      "category": "pisos",
+      "highlight": false
+    },
+    {
+      "id": "helpdesk",
+      "name": "HelpDesk",
+      "icon": "helpdesk",
+      "website": "https://helpdesk.com",
+      "category": "pisos",
+      "highlight": false
+    }
+  ]
+} 

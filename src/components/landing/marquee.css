@@ -1,0 +1,80 @@
+.marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 120px; /* altura ajustada para nuestros iconos */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee__track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  animation: scroll 30s linear infinite; /* Velocidad más lenta para nuestros iconos */
+  will-change: transform;
+}
+
+.marquee__item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.marquee__item:hover {
+  transform: translateY(-4px);
+}
+
+.marquee__item:hover .marquee__icon {
+  color: hsl(var(--primary));
+}
+
+.marquee__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.5rem;
+  color: hsl(var(--muted-foreground));
+  transition: color 0.3s ease;
+}
+
+.marquee__name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  text-align: center;
+  white-space: nowrap;
+}
+
+.marquee__badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  z-index: 10;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} 
