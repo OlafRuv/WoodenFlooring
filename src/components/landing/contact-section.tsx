@@ -99,8 +99,8 @@ ${values.name}
               </div>
               <div>
                 <h3 className="text-xl font-semibold">Bruno Ventura Acevedo</h3>
-                <a href={`tel:${companyData.contact.phone}`} className="text-muted-foreground hover:text-accent flex items-center gap-2">
-                  <Phone className="w-4 h-4" /> {companyData.contact.phone}
+                <a href="tel:+523317380357" className="text-muted-foreground hover:text-accent flex items-center gap-2">
+                  <Phone className="w-4 h-4" /> +52 33 1738 0357
                 </a>
               </div>
             </div>
@@ -110,8 +110,8 @@ ${values.name}
               </div>
               <div>
                 <h3 className="text-xl font-semibold">Salvador Ventura Rangel</h3>
-                <a href={`tel:${companyData.contact.phone}`} className="text-muted-foreground hover:text-accent flex items-center gap-2">
-                  <Phone className="w-4 h-4" /> {companyData.contact.phone}
+                <a href="tel:+523339724653" className="text-muted-foreground hover:text-accent flex items-center gap-2">
+                  <Phone className="w-4 h-4" /> +52 33 3972 4653
                 </a>
               </div>
             </div>

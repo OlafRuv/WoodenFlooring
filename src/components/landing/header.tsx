@@ -12,22 +12,27 @@ const Logo = () => {
   
   return (
     <Link href="/" className="flex items-center gap-2" prefetch={false}>
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-accent flex-shrink-0"
+        className="h-8 w-8 text-accent flex-shrink-0"
       >
-        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-        <path d="M2 17l10 5 10-5" />
-        <path d="M2 12l10 5 10-5" />
-      </svg>
+        <rect x="4" y="8" width="24" height="16" rx="2" className="fill-accent/20 stroke-accent" />
+        <path d="M8 12h16" className="stroke-accent/60" />
+        <path d="M8 16h16" className="stroke-accent/60" />
+        <path d="M8 20h16" className="stroke-accent/60" />
+        <path d="M12 6l4-2 4 2" className="stroke-accent" />
+        <path d="M16 4v4" className="stroke-accent" />
+        <path d="M14 6h4" className="stroke-accent" />
+      </svg> */}
+      <img src="/logo.png" alt="Logo Casa Venacev" className="h-11 w-11 flex-shrink-0" />
       <div className="min-w-0">
         <span className="font-bold text-lg font-headline text-foreground block truncate">{companyData.company.name}</span>
         <p className="text-xs text-muted-foreground -mt-1 block truncate">{companyData.company.tagline}</p>

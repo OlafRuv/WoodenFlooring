@@ -24,7 +24,10 @@ export default function FloatingCTA() {
   
   // Crear el mensaje de WhatsApp
   const whatsappMessage = encodeURIComponent("Hola, quisiera solicitar una asesoría gratuita.");
-  const whatsappUrl = `https://wa.me/${companyData.contact.whatsapp.replace('+', '')}?text=${whatsappMessage}`;
+  
+  // Formatear el número para WhatsApp (sin +, espacios ni guiones)
+  const whatsappNumber = companyData.contact.whatsapp.replace(/[\s\-+]/g, '');
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <a

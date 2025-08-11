@@ -1,14 +1,14 @@
-import servicesData from '@/data/services.json';
-import projectsData from '@/data/projects.json';
-import testimonialsData from '@/data/testimonials.json';
-import companyData from '@/data/company.json';
-import processData from '@/data/process.json';
-import galleryData from '@/data/gallery.json';
-import heroData from '@/data/hero.json';
-import aboutData from '@/data/about.json';
-import differentiatorsData from '@/data/differentiators.json';
-import contactData from '@/data/contact.json';
-import brandsData from '@/data/brands.json';
+import servicesData from '../data/services.json';
+import projectsData from '../data/projects.json';
+import testimonialsData from '../data/testimonials.json';
+import companyData from '../data/company.json';
+import processData from '../data/process.json';
+import galleryData from '../data/gallery.json';
+import heroData from '../data/hero.json';
+import aboutData from '../data/about.json';
+import differentiatorsData from '../data/differentiators.json';
+import contactData from '../data/contact.json';
+import brandsData from '../data/brands.json';
 
 import type {
   ServicesData,
