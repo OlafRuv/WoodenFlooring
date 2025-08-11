@@ -2,7 +2,8 @@
   "title": "La Elegancia de la Madera, Hecha Realidad",
   "subtitle": "Transformamos espacios con pisos de madera de la más alta calidad",
   "description": "Con más de 30 años de experiencia, convertimos tus espacios con pisos de madera de la más alta calidad y diseños exclusivos.",
-  "backgroundImage": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+  "backgroundImageMobile": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+  "backgroundImage": "https://images.pexels.com/photos/3935338/pexels-photo-3935338.jpeg",
   "ctaPrimary": {
     "text": "Ver Servicios",
     "link": "#servicios"

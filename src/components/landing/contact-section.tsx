@@ -83,7 +83,7 @@ ${values.name}
   }
 
   return (
-    <section id="contacto" className="w-full py-12 md:py-24 lg:py-32 bg-[#E9DDCC]">
+    <section id="contacto" className="w-full py-12 md:py-24 lg:py-32 bg-card">
       <div className="container mx-auto grid items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
         <div className="space-y-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-accent">

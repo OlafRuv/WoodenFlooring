@@ -2,9 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { loadBrandsData } from '@/lib/data-loader';
-import { Badge } from '@/components/ui/badge';
-import { SimpleIcon } from '@/components/ui/simple-icon';
-import { Star, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import "./marquee.css";
 
 export default function BrandsCarousel() {
