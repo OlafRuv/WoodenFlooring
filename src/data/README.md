@@ -111,6 +111,14 @@ Los iconos de las marcas se cargan automáticamente desde [Simple Icons](https:/
   - **submitButton**: Texto del botón de envío
 - **contactInfo**: Información de contacto adicional
 
+### 💬 **Mensaje de WhatsApp Personalizado**
+El botón flotante de WhatsApp incluye un mensaje pre-escrito profesional:
+- **Personalización**: Menciona directamente a Bruno
+- **Especificidad**: Menciona servicios de pisos de madera
+- **Profesionalismo**: "Asesoría técnica gratuita"
+- **Propósito claro**: Evaluación del proyecto
+- **Cortesía**: Incluye pregunta de ayuda al final
+
 ## 🎨 **Iconos Disponibles**
 
 Puedes usar cualquiera de estos iconos de Lucide React en los campos `icon`:
